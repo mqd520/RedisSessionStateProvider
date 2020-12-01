@@ -1,0 +1,22 @@
+﻿@using Newtonsoft.Json;
+
+@{
+    ViewBag.Title = "GetSession";
+    string strJson = "";
+    if (ViewBag.UserData != null)
+    {
+        JsonSerializerSettings jss = new JsonSerializerSettings();
+        jss.DateFormatString = "yyyy-MM-dd HH:mm:ss";
+        strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.UserData, jss);
+    }
+}
+
+<h2>GetSession</h2>
+
+@Html.ActionLink("Index", "Index")<br /><br />
+@Html.ActionLink("SaveSession", "SaveSession")<br /><br />
+@Html.ActionLink("GetSession", "GetSession")<br /><br />
+
+
+@strJson
+
