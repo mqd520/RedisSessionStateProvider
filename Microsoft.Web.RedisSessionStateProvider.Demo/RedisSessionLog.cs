@@ -8,7 +8,7 @@ namespace Microsoft.Web.RedisSessionStateProvider.Demo
 {
     public class RedisSessionLog
     {
-        public static TextWriter OnWrite()
+        public static TextWriter GetLogWriter()
         {
             string dir = AppDomain.CurrentDomain.BaseDirectory + "Logs\\RedisSession\\";
             if (!Directory.Exists(dir))
