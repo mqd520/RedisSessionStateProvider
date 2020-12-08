@@ -1,0 +1,75 @@
+[2020-12-08 07:52:05.941][Info]Host: 192.168.0.100, Port: 6379, ThrowOnError: True, UseSsl: False, RetryTimeout: 00:00:05, DatabaseId: 0, ApplicationName: RedisSession, RequestTimeout: 00:01:50, SessionTimeout: 00:20:00
+[2020-12-08 07:52:06.062][Info]CreateNewStoreData => Session provider object: 17940955.
+[2020-12-08 07:52:38.529][Info]CreateNewStoreData => Session provider object: 20675156.
+192.168.0.100:6379,ssl=False,abortConnect=False
+
+Connecting 192.168.0.100:6379/Interactive...
+BeginConnect: 192.168.0.100:6379
+1 unique nodes specified
+Requesting tie-break from 192.168.0.100:6379 > __Booksleeve_TieBreak...
+Allowing endpoints 00:00:05 to respond...
+Awaiting task completion, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=1,Free=8190,Min=8,Max=8191)
+Not all tasks completed cleanly (from ReconfigureAsync#1500, timeout 5000ms), IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=4,Free=8187,Min=8,Max=8191)
+192.168.0.100:6379 did not respond
+Waiting for tiebreakers...
+Awaiting task completion, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=4,Free=8187,Min=8,Max=8191)
+connection failed: 192.168.0.100:6379 (Subscription, UnableToConnect): UnableToConnect on 192.168.0.100:6379/Subscription, Initializing, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 3549s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.0.519.65453
+connection failed: 192.168.0.100:6379 (Interactive, UnableToConnect): UnableToConnect on 192.168.0.100:6379/Interactive, Initializing, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 3549s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.0.519.65453
+Finished awaiting tasks, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=1,Free=8190,Min=8,Max=8191)
+192.168.0.100:6379 failed to nominate (Faulted)
+> UnableToConnect on 192.168.0.100:6379/Interactive, Initializing, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 3549s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.0.519.65453
+No masters detected
+192.168.0.100:6379: Standalone v2.0.0, master; keep-alive: 00:01:00; int: Connecting; sub: Connecting; not in use: DidNotRespond
+192.168.0.100:6379: int ops=0, qu=0, qs=0, qc=0, wr=0, async=2, socks=2; sub ops=0, qu=0, qs=0, qc=0, wr=0, socks=2
+Circular op-count snapshot; int: 0 (0.00 ops/s; spans 10s); sub: 0 (0.00 ops/s; spans 10s)
+Sync timeouts: 0; async timeouts: 0; fire and forget: 0; last heartbeat: -1s ago
+resetting failing connections to retry...
+retrying; attempts left: 2...
+1 unique nodes specified
+Requesting tie-break from 192.168.0.100:6379 > __Booksleeve_TieBreak...
+Allowing endpoints 00:00:05 to respond...
+Awaiting task completion, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=1,Free=8190,Min=8,Max=8191)
+Not all tasks completed cleanly (from ReconfigureAsync#1500, timeout 5000ms), IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=2,Free=8189,Min=8,Max=8191)
+192.168.0.100:6379 did not respond
+Waiting for tiebreakers...
+Awaiting task completion, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=2,Free=8189,Min=8,Max=8191)
+Not all tasks completed cleanly (from NominatePreferredMaster#1735, timeout 50ms), IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=2,Free=8189,Min=8,Max=8191)
+192.168.0.100:6379 failed to nominate (WaitingForActivation)
+No masters detected
+192.168.0.100:6379: Standalone v2.0.0, master; keep-alive: 00:01:00; int: Disconnected; sub: Disconnected; not in use: DidNotRespond
+192.168.0.100:6379: int ops=0, qu=0, qs=0, qc=0, wr=0, async=2, socks=2; sub ops=0, qu=0, qs=0, qc=0, wr=0, socks=2
+Circular op-count snapshot; int: 0 (0.00 ops/s; spans 10s); sub: 0 (0.00 ops/s; spans 10s)
+Sync timeouts: 0; async timeouts: 0; fire and forget: 0; last heartbeat: -1s ago
+resetting failing connections to retry...
+retrying; attempts left: 1...
+1 unique nodes specified
+Requesting tie-break from 192.168.0.100:6379 > __Booksleeve_TieBreak...
+Allowing endpoints 00:00:05 to respond...
+Awaiting task completion, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=2,Free=8189,Min=8,Max=8191)
+Not all tasks completed cleanly (from ReconfigureAsync#1500, timeout 5000ms), IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=8,Free=8183,Min=8,Max=8191)
+192.168.0.100:6379 did not respond
+Waiting for tiebreakers...
+Awaiting task completion, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=9,Free=8182,Min=8,Max=8191)
+Finished awaiting tasks, IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=3,Free=8188,Min=8,Max=8191)
+192.168.0.100:6379 failed to nominate (Faulted)
+> UnableToConnect on 192.168.0.100:6379/Interactive, Initializing, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 3559s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 10s ago, v: 2.0.519.65453
+No masters detected
+192.168.0.100:6379: Standalone v2.0.0, master; keep-alive: 00:01:00; int: Disconnected; sub: Disconnected; not in use: DidNotRespond
+192.168.0.100:6379: int ops=0, qu=0, qs=0, qc=0, wr=0, async=6, socks=3; sub ops=0, qu=0, qs=0, qc=0, wr=0, socks=3
+Circular op-count snapshot; int: 0 (0.00 ops/s; spans 10s); sub: 0 (0.00 ops/s; spans 10s)
+Sync timeouts: 0; async timeouts: 0; fire and forget: 0; last heartbeat: -1s ago
+Starting heartbeat...
+[2020-12-08 07:52:53.989][Error]Exception: No connection is available to service this operation: EVAL; UnableToConnect on 192.168.0.100:6379/Interactive, Initializing, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 3549s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.0.519.65453; IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=1,Free=8190,Min=8,Max=8191), Local-CPU: n/a
+[2020-12-08 07:52:54.001][Error]SetAndReleaseItemExclusive => StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: EVAL; UnableToConnect on 192.168.0.100:6379/Interactive, Initializing, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 3549s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.0.519.65453; IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=1,Free=8190,Min=8,Max=8191), Local-CPU: n/a ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on 192.168.0.100:6379/Interactive, Initializing, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 3549s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.0.519.65453
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 StackExchange.Redis.TaskExtensions.<TimeoutAfter>d__8.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 StackExchange.Redis.ConnectionMultiplexer.<WaitAllIgnoreErrorsAsync>d__80.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   在 StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   在 StackExchange.Redis.RedisDatabase.ScriptEvaluate(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags)
+   �

@@ -13,6 +13,9 @@ namespace Microsoft.Web.RedisSessionStateProvider.Demo.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            var obj = Session["dddddddd"];
+            var obj1 = Session["dddddddd"] as UserInfo;
+
             return View();
         }
 

@@ -164,6 +164,7 @@
     </Compile>
     <Compile Include="MySessionSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedisSessionLog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
